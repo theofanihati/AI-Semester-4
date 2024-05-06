@@ -1,2 +1,1 @@
-# YESclean
-Project Pemrograman Web Semester 4 
+Repo berisi Tugas-Tugas Artificial Intelligence Semester 4
