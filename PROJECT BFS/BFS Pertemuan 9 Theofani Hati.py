@@ -1,4 +1,4 @@
-peta= {'A': set (['B', 'H']),
+maps= {'A': set (['B', 'H']),
        'B': set (['A', 'C', 'H']),
         'C': set (['B', 'D', 'E']),
         'D': set (['C', 'E', 'F', 'G', 'H']),
@@ -16,7 +16,7 @@ def BFS_shortest_line(maps, start, goal):
 
     while queue:
         line = queue.pop(0);
-        node = jalur[-1];
+        node = line[-1];
 
         if node not in explored:
             neighbours = maps[node];
@@ -35,3 +35,5 @@ def BFS_shortest_line(maps, start, goal):
 
 start = input("Masukkan awal: ");
 goal = input("Masukkan akhir: ");
+
+print(BFS_shortest_line(maps, start, goal));
